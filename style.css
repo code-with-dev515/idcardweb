@@ -1,0 +1,133 @@
+ body{
+        background-color: rgb(51, 149, 210);
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .box1{
+        background-color: white;
+         height: 700px;
+        width: 50%;
+        margin: 21px auto;
+        padding: 10px;
+         box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+       margin-top: 61px;
+       border-radius: 21px;
+       animation: card 1.2s ease;
+       transition: 0.4s;
+    }
+
+.box1:hover{
+    transform: translateY(-25px);
+    box-shadow: 0 25px 55px rgba(0, 0, 0, 0.35);
+
+}
+
+    .box1 img{
+        height: 200px;
+       margin: 9px auto;
+       margin-left: 43px;
+      border-radius: 15px;
+      transition: 0.5s;
+      animation: photo 1.5s ease;
+       
+    }
+
+    .box1 img:hover{
+        transform: scale(1.05) rotate(2deg);
+        box-shadow: 0 10px 30px rgb(242, 244, 245);
+
+    }
+    
+    h1{
+       align-items: center;
+       justify-content: center;
+       display: flex;
+       background-color: aliceblue;
+       border-radius: 20px;
+       padding: 12px;
+       transition: 0.4s;
+       animation: heading 1.5s ease;
+    }
+    h1:hover{
+        transform: scale(1.03);
+        background-color: rgb(51, 149, 210);
+        color: white;
+    }
+
+    p{
+        font-size: 18px;
+        line-height: 1.6;
+        padding: 0 25px;
+        animation: text 1.8s ease;
+    }
+   ul{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        list-style: none;
+        font-weight: bold;
+        animation: list 2s ease;
+    }
+     li{
+        transition: 0.3s;
+    }
+     li:hover{
+        color: rgb(244, 246, 247);
+        transform: translateY(-5px);
+        background-color: rgb(9, 10, 10);
+        height: 30px;
+        border-radius: 15px;
+    }
+    @keyframes card{
+        form{
+            opacity: 0;
+            transform: translateY(80px);
+        }
+        to{
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+}
+
+@keyframes photo{
+    form{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+ @keyframes heading{
+        from{
+            opacity: 0;
+            transform: translateX(-80px);
+        }
+
+        to{
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes text{
+        from{
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        to{
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes list{
+        from{
+            opacity: 0;
+            transform: scale(0.7);
+        }
+
+        to{
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
